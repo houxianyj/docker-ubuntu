@@ -10,5 +10,7 @@ RUN set -eux; \
     ';\
     apt-get update; \
     apt-get -y install  --no-install-recommends $fetchSoft; \
-    rm -rf /var/lib/apt/lists/*; \
-    \
+    rm -rf /var/lib/apt/lists/*;
+
+
+CMD ["/bin/bash"]
