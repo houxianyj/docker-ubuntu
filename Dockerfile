@@ -5,7 +5,7 @@ RUN set -eux; \
 
 RUN set -eux; \
     apt-get update; \
-    apt-get -y --no-install-recommends install vim iproute2 iputils-ping; \
+    apt-get -y --no-install-recommends install vim iproute2 iputils-ping wget unzip; \
     rm -rf /var/lib/apt/lists/*;
 
 CMD ["/bin/bash"]
